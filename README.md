@@ -124,13 +124,15 @@ The rest of the code is untouched.
 
 I ran the particle filter with 100 particles and it passed. Below screenshot shows the last frame from the simulator output.
 
-<img src="https://github.com/prasadshingne/CarND-Kidnapped-Vehicle-Project/tree/master/output_files/pf100_lastframe.png" width="480" height="270"/>
+| Parameter    |      x       |       y      |     yaw      |
+|:------------:|:------------:|:------------:|:------------:|
+|    Error     |    0.109     |     0.092    |     0.004    |
 
-| Parameter    | Error        |
-|:------------:|:------------:|
-|      x       |    0.109     |
-|      y       |    0.092     |
-|     yaw      |    0.004     |
+
+<img src="https://github.com/prasadshingne/CarND-Kidnapped-Vehicle-Project/tree/master/output_files/pf100_lastframe.png" width="960" height="540"/>
+
+
+
 
 
 
