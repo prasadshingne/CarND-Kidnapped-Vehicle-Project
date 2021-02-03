@@ -129,9 +129,37 @@ I ran the particle filter with 100 particles and it passed. Below screenshot sho
 |    Error     |    0.109     |     0.092    |     0.004    |
 
 
-<img src="https://github.com/prasadshingne/CarND-Kidnapped-Vehicle-Project/tree/master/output_files/pf100_lastframe.jpg" width="960" height="540"/>
+<img src="https://github.com/prasadshingne/CarND-Kidnapped-Vehicle-Project/blob/master/output_files/pf100_lastframe.jpg" width="480" height="270"/>
 
+The simulation output video is [here](https://github.com/prasadshingne/CarND-Kidnapped-Vehicle-Project/blob/master/output_files/pf100-2021-01-31_07.11.12.mp4)
 
+## Note: Effect of number of particles on estimation
+
+In addition to running the filter with 100 particles I also ran it with 1 particle [simultor output](https://github.com/prasadshingne/CarND-Kidnapped-Vehicle-Project/blob/master/output_files/pf1-2021-01-31_07.23.47.mp4) and 3 particles [simultor output](https://github.com/prasadshingne/CarND-Kidnapped-Vehicle-Project/blob/master/output_files/pf3-2021-01-31_07.08.59.mp4).   
+
+Of course the result was poor with 1 particle:
+
+| Parameter    |      x       |       y      |     yaw      |
+|:------------:|:------------:|:------------:|:------------:|
+|    Error     |    8.525     |     8.097    |     0.083    |
+
+Surprisingly to me the result is already much better with 3 particles:
+
+| Parameter    |      x       |       y      |     yaw      |
+|:------------:|:------------:|:------------:|:------------:|
+|    Error     |    0.262     |     0.262    |     0.010    |
+
+Screenshot of the last frame for both the simulations is shown below.
+
+| 1 particle   | 3 particles  |
+|:------------:|:------------:|
+|<img src="https://github.com/prasadshingne/CarND-Kidnapped-Vehicle-Project/blob/master/output_files/pf1_lastframe.jpg" width="480" height="270"/> | <img src="https://github.com/prasadshingne/CarND-Kidnapped-Vehicle-Project/blob/master/output_files/pf3_lastframe.jpg" width="480" height="270"/> |
+
+The below figures compare the position estimate, R (distance from origin) and Yaw for the three cases.
+
+|   Position Estimate    |   R (distance from origin)   |           Yaw          |
+|:----------------------:|:----------------------------:|:----------------------:|
+|    <img src="https://github.com/prasadshingne/CarND-Kidnapped-Vehicle-Project/blob/master/output_files/Compare_predictions_position.jpg" width="320" height="180"/>     |   <img src="https://github.com/prasadshingne/CarND-Kidnapped-Vehicle-Project/blob/master/output_files/Compare_r.jpg" width="320" height="180"/>    |     <img src="https://github.com/prasadshingne/CarND-Kidnapped-Vehicle-Project/blob/master/output_files/Compare_theta.jpg" width="320" height="180"/>   |
 
 
 
