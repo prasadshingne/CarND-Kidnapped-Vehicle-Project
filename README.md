@@ -110,4 +110,27 @@ I don't touch main.cpp
 
 # Implementing the Particle Filter
 
-The particle filter is implemented in 
+The particle filter is implemented in [src/particle_filter.cpp](https://github.com/prasadshingne/CarND-Kidnapped-Vehicle-Project/blob/master/src/particle_filter.cpp) -
+
+* **Initializtion** in [ParticleFilter::init](https://github.com/prasadshingne/CarND-Kidnapped-Vehicle-Project/blob/1c8effc04d2ab72c25f1b84bf3f41bacb677df5a/src/particle_filter.cpp#L28) from line 28 to 63.
+* **Prediction** in [ParticleFilter::prediction](https://github.com/prasadshingne/CarND-Kidnapped-Vehicle-Project/blob/1c8effc04d2ab72c25f1b84bf3f41bacb677df5a/src/particle_filter.cpp#L65) from line 65 to 99.
+* **Data Association** in [ParticleFilter::dataAssociation](https://github.com/prasadshingne/CarND-Kidnapped-Vehicle-Project/blob/1c8effc04d2ab72c25f1b84bf3f41bacb677df5a/src/particle_filter.cpp#L101) from line 101 to 144.
+* **Update Weights** in [ParticleFilter::updateWeights](https://github.com/prasadshingne/CarND-Kidnapped-Vehicle-Project/blob/1c8effc04d2ab72c25f1b84bf3f41bacb677df5a/src/particle_filter.cpp#L146) from line 146 to 232.
+* **Resample** in [ParticleFilter::resample](https://github.com/prasadshingne/CarND-Kidnapped-Vehicle-Project/blob/1c8effc04d2ab72c25f1b84bf3f41bacb677df5a/src/particle_filter.cpp#L234) from line 234 to 274.
+
+The rest of the code is untouched.
+
+# Results
+
+I ran the particle filter with 100 particles and it passed. Below screenshot shows the last frame from the simulator output.
+
+<img src="https://github.com/prasadshingne/CarND-Kidnapped-Vehicle-Project/tree/master/output_files/pf100_lastframe.png" width="480" height="270"/>
+
+| Parameter    | Error        |
+|:------------:|:------------:|
+|      x       |    0.109     |
+|      y       |    0.092     |
+|     yaw      |    0.004     |
+
+
+
