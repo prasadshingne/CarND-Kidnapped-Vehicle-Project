@@ -135,7 +135,7 @@ The simulation output video is [here](https://github.com/prasadshingne/CarND-Kid
 
 ## Note: Effect of number of particles on estimation
 
-In addition to running the filter with 100 particles I also ran it with 1 particle [simultor output](https://github.com/prasadshingne/CarND-Kidnapped-Vehicle-Project/blob/master/output_files/pf1-2021-01-31_07.23.47.mp4) and 3 particles [simultor output](https://github.com/prasadshingne/CarND-Kidnapped-Vehicle-Project/blob/master/output_files/pf3-2021-01-31_07.08.59.mp4).   
+In addition to running the filter with 100 particles I also ran it with 1 particle ([simultor output](https://github.com/prasadshingne/CarND-Kidnapped-Vehicle-Project/blob/master/output_files/pf1-2021-01-31_07.23.47.mp4)) and 3 particles ([simultor output](https://github.com/prasadshingne/CarND-Kidnapped-Vehicle-Project/blob/master/output_files/pf3-2021-01-31_07.08.59.mp4)).   
 
 Of course the result was poor with 1 particle:
 
